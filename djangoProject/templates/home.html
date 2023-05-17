@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <h1></h1>
-</head>
-<body>
+{% extends 'base_generic.html' %}
 
-</body>
-</html>
+{% load static %} <!-- 정적 파일 시스템 로드 -->
+
+{% block content %}
+
+    <h1><a href="{%  url 'login' %}">로그인</a></h1>
+    <p>이름: 춘식이<br>종: 고양이<br>좋아하는 것: 고구마</p>
+    <img src="{% static 'choonsik/choonsik2.png' %}" alt="춘식이">
+{% endblock %}

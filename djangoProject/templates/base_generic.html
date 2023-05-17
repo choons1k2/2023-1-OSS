@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>choonsik, MyPet</title>
+  <style>
+    body {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <header>
+     {% load static %} <!-- 정적 파일 시스템 로드 -->
+
+    <h1>춘식이를 소개합니다~</h1>
+      <img src="{% static 'choonsik/choonsik1.png' %}" alt="춘식이">
+  </header>
+
+  <main>
+  {% block content %}
+  <!-- 여기에 각 페이지의 내용이 들어갑니다 -->
+  {% endblock %}
+  </main>
+
+</body>
+</html>
